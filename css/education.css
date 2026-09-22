@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #08111f;
+    color: white;
+}
+
+header {
+    padding: 25px 8%;
+    background: #0b1728;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #00e5ff;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav .active {
+    color: #00e5ff;
+}
+
+.education {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+.subtitle {
+    color: #00e5ff;
+    letter-spacing: 3px;
+}
+
+h1 {
+    font-size: 45px;
+    margin: 15px 0 60px;
+}
+
+h1 span {
+    color: #00e5ff;
+}
+
+.timeline {
+    max-width: 800px;
+    margin: auto;
+    border-left: 3px solid #00e5ff;
+    text-align: left;
+}
+
+.edu-card {
+    background: #0d1b2e;
+    margin: 0 0 30px 35px;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #19364c;
+    position: relative;
+}
+
+.edu-card::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #00e5ff;
+    border-radius: 50%;
+    left: -44px;
+    top: 30px;
+    box-shadow: 0 0 15px #00e5ff;
+}
+
+.edu-card span {
+    color: #00e5ff;
+    font-weight: bold;
+}
+
+.edu-card h2 {
+    margin: 10px 0;
+}
+
+.edu-card p {
+    color: #aab6c5;
+    line-height: 1.6;
+}
+
+@media(max-width: 800px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
